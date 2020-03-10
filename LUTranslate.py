@@ -25,7 +25,9 @@ def main(Text) :
 
             CountWord = CountWord + 1
 
-        Output = Words[Count][0 : min(ListofReplace)] + "ล" + Words[Count][min(ListofReplace) + 1 :] + Words[Count][min(ListofReplace)] + "ู"
+        Output = Words[Count][0 : min(ListofReplace)] + "ล" + Words[Count][min(ListofReplace) + 1 :] + Words[Count][min(ListofReplace)] + "ุ"
+
+        if len(ListofReplace) > 1 : Output = Words[Count][0 : min(ListofReplace)] + "ล" + Words[Count][min(ListofReplace) + 1 :] + Words[Count][min(ListofReplace)] + "ุ" + Words[Count][max(ListofReplace)]
 
         WordsOutput.append(Output)
 
